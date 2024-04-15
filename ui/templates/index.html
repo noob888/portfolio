@@ -1,63 +1,48 @@
-{% load bootstrap4 %}
+{% extends 'base.html' %}
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Nikhil &mdash; Portfolio</title>
-    <meta name="description" content="Portfolio">
-    <meta name="keywords" content="Portfolio">
-    
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-    <link rel="stylesheet" href="{% static 'css/styles-merged.css' %}">
-    <link rel="stylesheet" href="{% static 'css/style.min.css' %}">
-    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+{%block title %}
+Nikhil &mdash; Portfolio
+{% endblock %}
 
-    <!--[if lt IE 9]>
-      <script src="js/vendor/html5shiv.min.js"></script>
-      <script src="js/vendor/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
 
+  {% block body %}
   <!-- START: header -->
-  
+
   <div class="probootstrap-loader"></div>
 
   <header role="banner" class="probootstrap-header">
     <div class="container">
-        <a href="index.html" class="probootstrap-logo">Virb</a>
-        
-        <a href="#" class="probootstrap-burger-menu visible-xs" ><i>Menu</i></a>
-        <div class="mobile-menu-overlay"></div>
+      <a href="index.html" class="probootstrap-logo">Portfolio</a>
 
-        <nav role="navigation" class="probootstrap-nav hidden-xs">
-          <ul class="probootstrap-main-nav">
-            <li class="active"><a href="{% url 'index' %}">Home</a></li>
-            <li><a href="{% url 'services' %}">Portfolio</a></li>
-            <!-- <li><a href="services.html">Services</a></li> -->
-            <li><a href="{% url 'about' %}">About</a></li>
-            <li><a href="{% url 'contact' %}">Contact</a></li>
+      <a href="#" class="probootstrap-burger-menu visible-xs"><i>Menu</i></a>
+      <div class="mobile-menu-overlay"></div>
+
+      <nav role="navigation" class="probootstrap-nav hidden-xs">
+        <ul class="probootstrap-main-nav">
+          <li class="active"><a href="{% url 'index' %}">Home</a></li>
+          <li><a href="{% url 'services' %}">Projects</a></li>
+          <!-- <li><a href="services.html">Services</a></li> -->
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+        <ul class="probootstrap-right-nav hidden-xs">
+          <li><a href="https://linkedin.com/in/nikhil-adiga" target="_blank"><i class="icon-linkedin"></i></a></li>
+          <li><a href="https://github.com/noob888" target="_blank"><i class="icon-github"></i></a></li>
+          <!-- <li><a href="#"><i class="icon-instagram2"></i></a></li> -->
+        </ul>
+        <div class="extra-text visible-xs">
+          <a href="#" class="probootstrap-burger-menu"><i>Menu</i></a>
+          <h5>Address</h5>
+          <p>46 Penhurst Ave, Toronto, Ontario, Canada</p>
+          <h5>Connect</h5>
+          <ul class="social-buttons">
+            <li><a href="https://linkedin.com/in/nikhil-adiga" target="_blank"><i class="icon-linkedin"></i></a></li>
+            <li><a href="https://github.com/noob888" target="_blank"><i class="icon-github"></i></a></li>
+            <!-- <li><a href="#"><i class="icon-instagram2"></i></a></li> -->
           </ul>
-          <ul class="probootstrap-right-nav hidden-xs">
-            <li><a href="#"><i class="icon-twitter"></i></a></li>
-            <li><a href="#"><i class="icon-facebook2"></i></a></li>
-            <li><a href="#"><i class="icon-instagram2"></i></a></li>
-          </ul>
-          <div class="extra-text visible-xs"> 
-            <a href="#" class="probootstrap-burger-menu"><i>Menu</i></a>
-            <h5>Address</h5>
-            <p>46 Penhurst Ave, Toronto, Ontario, Canada</p>
-            <h5>Connect</h5>
-            <ul class="social-buttons">
-              <li><a href="#"><i class="icon-twitter"></i></a></li>
-              <li><a href="#"><i class="icon-facebook2"></i></a></li>
-              <li><a href="#"><i class="icon-instagram2"></i></a></li>
-            </ul>
-          </div>
-        </nav>
+        </div>
+      </nav>
     </div>
   </header>
   <!-- END: header -->
@@ -68,15 +53,15 @@
           <div class="row py-2">
             <div class="col-md-6 text-center">
               <div class="slides-text probootstrap-animate" data-animate-effect="fadeIn">
+                <img src="../static/img/profile-image.png" alt="Profile Image">
+              </div>
+            </div>
+            <div class="col-md-6 text-center">
+              <div class="slides-text probootstrap-animate" data-animate-effect="fadeIn">
                 <h2>Nikhil Kounjoor Adiga</h2>
               </div>
-          </div>
-          <div class="col-md-6 text-center">
-            <div class="slides-text probootstrap-animate" data-animate-effect="fadeIn">
-              <img src="../static/img/profile-image.png" alt="Profile Image">
             </div>
-        </div>
-        </div>
+          </div>
       </li>
     </ul>
   </section>
@@ -92,7 +77,10 @@
             </div>
             <div class="text">
               <h3 class="heading">Technology</h3>
-              <p>My expertise in software development spans across 6 years and multiple programming languages, including Python, Flutter, JavaScript, and more. I have hands-on experience in building scalable web applications, developing robust backend systems, and creating intuitive user interfaces.</p>
+              <p>Expertise in software development across 6 years in programming languages such as
+                Python, SQL, Flutter, and JavaScript. I have hands-on experience in building scalable web and native
+                applications, developing robust backend systems, and creating intuitive UI/UX. I have also built
+                automation scripts to simplify repetitive tasks.</p>
               <!-- <p><a href="single-page.html">Learn more</a></p> -->
             </div>
           </div>
@@ -104,7 +92,10 @@
             </div>
             <div class="text">
               <h3 class="heading">Data and Analytics</h3>
-              <p>I possess a 3 year background in data science and analytics, with proficiency in tools such as Pandas, NumPy, and TensorFlow. I specialize in extracting actionable insights from complex datasets, identifying trends, and making data-driven decisions. Be it Machine Learning or AI</p>
+              <p>My professional and academic experience has equipped me with skills in data science and analytics, with
+                proficiency in tools such as Pandas, NumPy, and TensorFlow. I specialize in extracting actionable
+                insights from complex datasets, identifying trends, and making data-driven decisions. Be it using Excel,
+                Machine Learning or AI.</p>
               <!-- <p><a href="single-page.html">Learn more</a></p> -->
             </div>
           </div>
@@ -116,7 +107,10 @@
             </div>
             <div class="text">
               <h3 class="heading">Digital Marketing</h3>
-              <p>I possess 4 years of experience in digital marketing, SEO, Programmatic Marketing, email marketing, and analytics. Leveraging a strategic mindset, creative flair, and a data-driven approach, I drive performace-driven digital marketing campaigns with a proven track record.</p>
+              <p>I possess 4 years of experience in digital marketing, SEO, Programmatic Marketing, email marketing, and
+                budgeting. Leveraging a strategic mindset, creative flair, and a data-driven approach, I drive
+                performace-driven digital marketing campaigns with a proven track record of building technology
+                companies from 0 to $5M monthly revenue.</p>
               <!-- <p><a href="single-page.html">Learn more</a></p> -->
             </div>
           </div>
@@ -140,35 +134,39 @@
             <div class="panel panel-default">
               <div class="panel-heading" role="tab" id="headingOne">
                 <h3 class="panel-title">
-                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                   MBA, Business Analytics | DeGroote School of Business, McMaster University
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    MBA, Business Analytics | DeGroote School of Business, McMaster University
                   </a>
                 </h3>
               </div>
               <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                 <div class="panel-body">
                   <ul>
-                    <li>Built a custom <a href="https://chat.openai.com/g/g-BbTqdbKfR-research-gpt" target="_blank">ResearchGPT</a> to help business researchers get credible, cited results from AI chats.</li>
-                    <li>Won the CMA Brand Manager Case Competition & course I603: Digital Transformation and Analytics, demonstrating exceptional teamwork and strategic skills.</li>
-                    <li>Selected for Venture Challenge and solved go-to-market problems for two startups in 2022 and 2023.</li>
+                    <li>Worked with Scotia bank to solve the complexity in managing compliance in different Asset Management Units</li>
+                    <li>Won the CMA Brand Manager Case Competition & competition for course I603: Digital Transformation and Analytics.</li>
+                    <!-- <li>Selected for Venture Challenge and solved go-to-market problems for two startups in 2022 and
+                      2023.</li> -->
+                    <li>GMAT: 680</li>
                   </ul>
                 </div>
               </div>
             </div>
             <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingOne">
+              <div class="panel-heading" role="tab" id="headingTwo">
                 <h3 class="panel-title">
-                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                   BBA, Finance and Marketing | Jain University
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    Bachelor's of Engineering, Computer Science | NIE Institute of Technology
                   </a>
                 </h3>
               </div>
-              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
                 <div class="panel-body">
                   <ul>
-                    <li>Selected as part of a competitive program called Entreprenuers On Training where I was mentored by some of the top entrepreneurs in India from diverse industries.</li>
-                    <li>Won the final pitch competition worth $15,000 CAD.</li>
-                    <li>Selected for Venture Challenge and solved go-to-market problems for two startups in 2022 and 2023.</li>
+                    <!-- <li>Selected as part of a competitive program called Entreprenuers On Training where I was mentored
+                      by some of the top entrepreneurs in India from diverse industries.</li> -->
+                    <li>Built a web application for a SaaS startup.</li>
                   </ul>
                 </div>
               </div>
@@ -209,7 +207,7 @@
           <!-- END panel-group -->
         </div>
         <div class="col-md-6 probootstrap-animate" data-animate-effect="fadeInRight">
-          <p><img src="{% static 'img/slider_2.jpg' %}" alt="Free HTML Bootstrap Theme by uicookies.com" class="img-responsive"></p>
+          <p><img src="{% static 'img/slider_2.jpg' %}" alt="slider image" class="img-responsive"></p>
         </div>
       </div>
     </div>
@@ -227,8 +225,10 @@
         <div class="col-md-12 probootstrap-animate" data-animate-effect="fadeIn">
           <figure>
             <div class="probootstrap-video">
-              <a href="https://vimeo.com/45830194" class="popup-vimeo probootstrap-video-play overlay"><span><i class="icon-play3"></i></span></a>
-              <img src="{% static 'img/slider_3.jpg' %}" alt="Free HTML5 Bootstrap Template by uicookies.com" class="img-responsive">
+              <a href="https://vimeo.com/45830194" class="popup-vimeo probootstrap-video-play overlay"><span><i
+                    class="icon-play3"></i></span></a>
+              <img src="{% static 'img/slider_3.jpg' %}" alt="Free HTML5 Bootstrap Template by uicookies.com"
+                class="img-responsive">
             </div>
           </figure>
         </div>
@@ -248,7 +248,8 @@
         <div class="col-md-4 probootstrap-animate">
           <div class="probootstrap-card with-hover">
             <div class="probootstrap-card-media">
-              <a href="single-page.html"><img src="{% static 'img/slider_1.jpg' %}" class="img-responsive img-border" alt="Free HTML5 Template by uicookies.com"></a>
+              <a href="single-page.html"><img src="{% static 'img/slider_1.jpg' %}" class="img-responsive img-border"
+                  alt="Free HTML5 Template by uicookies.com"></a>
             </div>
             <div class="probootstrap-card-text">
               <h2 class="probootstrap-card-heading mb0">Vokalia and Consonantia</h2>
@@ -260,7 +261,8 @@
         <div class="col-md-4 probootstrap-animate">
           <div class="probootstrap-card with-hover">
             <div class="probootstrap-card-media">
-              <a href="single-page.html"><img src="{% static 'img/slider_2.jpg' %}" class="img-responsive img-border" alt="Free HTML5 Template by uicookies.com"></a>
+              <a href="single-page.html"><img src="{% static 'img/slider_2.jpg' %}" class="img-responsive img-border"
+                  alt="Free HTML5 Template by uicookies.com"></a>
             </div>
             <div class="probootstrap-card-text">
               <h2 class="probootstrap-card-heading mb0">Live the Blind Texts</h2>
@@ -272,7 +274,8 @@
         <div class="col-md-4 probootstrap-animate">
           <div class="probootstrap-card with-hover">
             <div class="probootstrap-card-media">
-              <a href="single-page.html"><img src="{% static 'img/slider_3.jpg' %}" class="img-responsive img-border" alt="Free HTML5 Template by uicookies.com"></a>
+              <a href="single-page.html"><img src="{% static 'img/slider_3.jpg' %}" class="img-responsive img-border"
+                  alt="Free HTML5 Template by uicookies.com"></a>
             </div>
             <div class="probootstrap-card-text">
               <h2 class="probootstrap-card-heading mb0">Behind the Word Mountains</h2>
@@ -297,10 +300,28 @@
         <div class="col-md-4  probootstrap-animate">
           <div class="probootstrap-testimony">
             <blockquote>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+              <p>Had the privilege of working with Nikhil in an assignment at MOneyHop. He comes across as a very
+                focused in his approach & extremely professional. He has always been very approachable & humility a
+                cornerstone of his personality. Wish a great future in his endeavors & I know he will be an asset to any
+                organization he works for.</p>
             </blockquote>
             <div class="author">
-              <img src="{% static 'img/person_1.jpg' %}" class="img-responsive" alt="Free HTML5 Bootstrap Theme by uicookies.com">
+              <img src="{% static 'img/person_1.jpg' %}" class="img-responsive"
+                alt="Free HTML5 Bootstrap Theme by uicookies.com">
+              <div>Aviroop <span>Director at LeverageEdu (Ex-MoneyHop)</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4  probootstrap-animate">
+          <div class="probootstrap-testimony">
+            <blockquote>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+                blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
+                ocean.</p>
+            </blockquote>
+            <div class="author">
+              <img src="{% static 'img/person_2.jpg' %}" class="img-responsive"
+                alt="Free HTML5 Bootstrap Theme by uicookies.com">
               <div>John Doe <span>Designer at uicookies.com</span></div>
             </div>
           </div>
@@ -308,21 +329,13 @@
         <div class="col-md-4  probootstrap-animate">
           <div class="probootstrap-testimony">
             <blockquote>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+                blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
+                ocean.</p>
             </blockquote>
             <div class="author">
-              <img src="{% static 'img/person_2.jpg' %}" class="img-responsive" alt="Free HTML5 Bootstrap Theme by uicookies.com">
-              <div>John Doe <span>Designer at uicookies.com</span></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4  probootstrap-animate">
-          <div class="probootstrap-testimony">
-            <blockquote>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-            </blockquote>
-            <div class="author">
-              <img src="{% static 'img/person_3.jpg' %}" class="img-responsive" alt="Free HTML5 Bootstrap Theme by uicookies.com">
+              <img src="{% static 'img/person_3.jpg' %}" class="img-responsive"
+                alt="Free HTML5 Bootstrap Theme by uicookies.com">
               <div>John Doe <span>Designer at uicookies.com</span></div>
             </div>
           </div>
@@ -332,82 +345,5 @@
   </section>
 
   <!-- END section -->
-  
+  {% endblock %}
 
-  <footer class="probootstrap-footer probootstrap-bg">
-    <div class="container">
-      <div class="row mb60">
-        <div class="col-md-3">
-          <div class="probootstrap-footer-widget">
-            <h4 class="heading">About Virb.</h4>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-            <p><a href="#">Read more...</a></p>
-          </div> 
-        </div>
-        <div class="col-md-3">
-          <div class="probootstrap-footer-widget probootstrap-link-wrap">
-            <h4 class="heading">Quick Links</h4>
-            <ul class="stack-link">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Products</a></li>
-              <li><a href="#">Testimonial</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="probootstrap-footer-widget">
-            <h4 class="heading">More Links</h4>
-            <ul class="stack-link">
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Terms</a></li>
-              <li><a href="#">Career</a></li>
-              <li><a href="#">Support Help</a></li>
-            </ul>
-          </div> 
-        </div>
-        <div class="col-md-3">
-          <div class="probootstrap-footer-widget">
-            <h4 class="heading">Subscribe</h4>
-            <p>Far far away behind the word mountains far from.</p>
-            <form action="#">
-              <div class="form-field">
-                <input type="text" class="form-control" placeholder="Enter your email">
-                <button class="btn btn-subscribe">Send</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="row copyright">
-        <div class="col-md-6">
-          <div class="probootstrap-footer-widget">
-            <p>&copy; 2017 <a href="https://uicookies.com/">uiCookies:Virb</a>. Designed by <a href="https://uicookies.com/">uicookies.com</a> <br> Demo Photos from <a href="https://unsplash.com/">Unsplash</a></p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="probootstrap-footer-widget right">
-            <ul class="probootstrap-social">
-              <li><a href="#"><i class="icon-twitter"></i></a></li>
-              <li><a href="#"><i class="icon-facebook"></i></a></li>
-              <li><a href="#"><i class="icon-instagram2"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <div class="gototop js-top">
-    <a href="#" class="js-gotop"><i class="icon-chevron-thin-up"></i></a>
-  </div>
-  
-
-  <script src="{% static 'js/scripts.min.js' %}"></script>
-  <script src="{% static 'js/main.min.js' %}"></script>
-  <script src="{% static 'js/custom.js' %}"></script>
-
-  </body>
-</html>
