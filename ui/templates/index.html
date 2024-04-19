@@ -6,172 +6,135 @@ Nikhil &mdash; Portfolio
 {% endblock %}
 
 
-  {% block body %}
-  <!-- START: header -->
-
-  <div class="probootstrap-loader"></div>
-
-  <header role="banner" class="probootstrap-header">
-    <div class="container">
-      <a href="index.html" class="probootstrap-logo">Portfolio</a>
-
-      <a href="#" class="probootstrap-burger-menu visible-xs"><i>Menu</i></a>
-      <div class="mobile-menu-overlay"></div>
-
-      <nav role="navigation" class="probootstrap-nav hidden-xs">
-        <ul class="probootstrap-main-nav">
-          <li class="active"><a href="{% url 'index' %}">Home</a></li>
-          <li><a href="{% url 'services' %}">Projects</a></li>
-          <!-- <li><a href="services.html">Services</a></li> -->
-          <li><a href="{% url 'about' %}">About</a></li>
-          <li><a href="{% url 'contact' %}">Contact</a></li>
-        </ul>
-        <ul class="probootstrap-right-nav hidden-xs">
-          <li><a href="https://linkedin.com/in/nikhil-adiga" target="_blank"><i class="icon-linkedin"></i></a></li>
-          <li><a href="https://github.com/noob888" target="_blank"><i class="icon-github"></i></a></li>
-          <!-- <li><a href="#"><i class="icon-instagram2"></i></a></li> -->
-        </ul>
-        <div class="extra-text visible-xs">
-          <a href="#" class="probootstrap-burger-menu"><i>Menu</i></a>
-          <h5>Address</h5>
-          <p>46 Penhurst Ave, Toronto, Ontario, Canada</p>
-          <h5>Connect</h5>
-          <ul class="social-buttons">
-            <li><a href="https://linkedin.com/in/nikhil-adiga" target="_blank"><i class="icon-linkedin"></i></a></li>
-            <li><a href="https://github.com/noob888" target="_blank"><i class="icon-github"></i></a></li>
-            <!-- <li><a href="#"><i class="icon-instagram2"></i></a></li> -->
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <!-- END: header -->
-  <section class="probootstrap-slider flexslider">
-    <ul class="slides">
-      <li style="background-image: url(../static/img/slider_1.jpg);" class="overlay2">
-        <div class="container">
-          <div class="row py-2">
-            <div class="col-md-6 text-center">
-              <div class="slides-text probootstrap-animate" data-animate-effect="fadeIn">
-                <img src="../static/img/profile-image.png" alt="Profile Image">
-              </div>
-            </div>
-            <div class="col-md-6 text-center">
-              <div class="slides-text probootstrap-animate" data-animate-effect="fadeIn">
-                <h2>Nikhil Kounjoor Adiga</h2>
-              </div>
+{% block body %}
+<section class="probootstrap-slider flexslider">
+  <ul class="slides">
+    <li style="background-image: url(../static/img/slider_1.jpg);" class="overlay2">
+      <div class="container">
+        <div class="row py-2">
+          <div class="col-md-6 text-center">
+            <div class="slides-text probootstrap-animate" data-animate-effect="fadeIn">
+              <img src="../static/img/profile-image.png" alt="Profile Image">
             </div>
           </div>
-      </li>
-    </ul>
-  </section>
-  <!-- END: slider  -->
-
-  <section class="probootstrap-section">
-    <div class="container">
-      <div class="row overlap">
-        <div class="col-md-4">
-          <div class="service left-icon probootstrap-animate">
-            <div class="icon">
-              <i class="icon-laptop3"></i>
-            </div>
-            <div class="text">
-              <h3 class="heading">Technology</h3>
-              <p>Expertise in software development across 6 years in programming languages such as
-                Python, SQL, Flutter, and JavaScript. I have hands-on experience in building scalable web and native
-                applications, developing robust backend systems, and creating intuitive UI/UX. I have also built
-                automation scripts to simplify repetitive tasks.</p>
-              <!-- <p><a href="single-page.html">Learn more</a></p> -->
+          <div class="col-md-6 text-center">
+            <div class="slides-text probootstrap-animate" data-animate-effect="fadeIn">
+              <h2>Nikhil Kounjoor Adiga</h2>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="service left-icon probootstrap-animate">
-            <div class="icon">
-              <i class="icon-presentation"></i>
-            </div>
-            <div class="text">
-              <h3 class="heading">Data and Analytics</h3>
-              <p>My professional and academic experience has equipped me with skills in data science and analytics, with
-                proficiency in tools such as Pandas, NumPy, and TensorFlow. I specialize in extracting actionable
-                insights from complex datasets, identifying trends, and making data-driven decisions. Be it using Excel,
-                Machine Learning or AI.</p>
-              <!-- <p><a href="single-page.html">Learn more</a></p> -->
-            </div>
+    </li>
+  </ul>
+</section>
+<!-- END: slider  -->
+
+<section class="probootstrap-section">
+  <div class="container">
+    <div class="row overlap">
+      <div class="col-md-4">
+        <div class="service left-icon probootstrap-animate">
+          <div class="icon">
+            <i class="icon-laptop3"></i>
+          </div>
+          <div class="text">
+            <h3 class="heading">Technology</h3>
+            <p>Expertise in software development across 6 years in programming languages such as
+              Python, SQL, Flutter, and JavaScript. I have hands-on experience in building scalable web and native
+              applications, developing robust backend systems, and creating intuitive UI/UX. I have also built
+              automation scripts to simplify repetitive tasks.</p>
+            <!-- <p><a href="single-page.html">Learn more</a></p> -->
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="service left-icon probootstrap-animate">
-            <div class="icon">
-              <i class="icon-wallet2"></i>
-            </div>
-            <div class="text">
-              <h3 class="heading">Digital Marketing</h3>
-              <p>I possess 4 years of experience in digital marketing, SEO, Programmatic Marketing, email marketing, and
-                budgeting. Leveraging a strategic mindset, creative flair, and a data-driven approach, I drive
-                performace-driven digital marketing campaigns with a proven track record of building technology
-                companies from 0 to $5M monthly revenue.</p>
-              <!-- <p><a href="single-page.html">Learn more</a></p> -->
-            </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service left-icon probootstrap-animate">
+          <div class="icon">
+            <i class="icon-presentation"></i>
+          </div>
+          <div class="text">
+            <h3 class="heading">Data and Analytics</h3>
+            <p>My professional and academic experience has equipped me with skills in data science and analytics, with
+              proficiency in tools such as Pandas, NumPy, and TensorFlow. I specialize in extracting actionable
+              insights from complex datasets, identifying trends, and making data-driven decisions. Be it using Excel,
+              Machine Learning or AI.</p>
+            <!-- <p><a href="single-page.html">Learn more</a></p> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service left-icon probootstrap-animate">
+          <div class="icon">
+            <i class="icon-wallet2"></i>
+          </div>
+          <div class="text">
+            <h3 class="heading">Digital Marketing</h3>
+            <p>I possess 4 years of experience in digital marketing, SEO, Programmatic Marketing, email marketing, and
+              budgeting. Leveraging a strategic mindset, creative flair, and a data-driven approach, I drive
+              performace-driven digital marketing campaigns with a proven track record of building technology
+              companies from 0 to $5M monthly revenue.</p>
+            <!-- <p><a href="single-page.html">Learn more</a></p> -->
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <!-- END section -->
+  </div>
+</section>
+<!-- END section -->
 
-  <div class="probootstrap-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center section-heading probootstrap-animate">
-          <h2>Education</h2>
-        </div>
+<div class="probootstrap-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center section-heading probootstrap-animate">
+        <h2>Education</h2>
       </div>
-      <div class="row">
-        <div class="col-md-6 probootstrap-animate" data-animate-effect="fadeInLeft">
+    </div>
+    <div class="row">
+      <div class="col-md-6 probootstrap-animate" data-animate-effect="fadeInLeft">
 
-          <div class="panel-group probootstrap-panel" id="accordion" role="tablist" aria-multiselectable="true">
-            <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingOne">
-                <h3 class="panel-title">
-                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
-                    MBA, Business Analytics | DeGroote School of Business, McMaster University
-                  </a>
-                </h3>
-              </div>
-              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                <div class="panel-body">
-                  <ul>
-                    <li>Worked with Scotia bank to solve the complexity in managing compliance in different Asset Management Units</li>
-                    <li>Won the CMA Brand Manager Case Competition & competition for course I603: Digital Transformation and Analytics.</li>
-                    <!-- <li>Selected for Venture Challenge and solved go-to-market problems for two startups in 2022 and
+        <div class="panel-group probootstrap-panel" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h3 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  MBA, Business Analytics | DeGroote School of Business, McMaster University
+                </a>
+              </h3>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                <ul>
+                  <li>Worked with Scotia bank to solve the complexity in managing compliance in different Asset
+                    Management Units</li>
+                  <li>Won the CMA Brand Manager Case Competition & competition for course I603: Digital Transformation
+                    and Analytics.</li>
+                  <!-- <li>Selected for Venture Challenge and solved go-to-market problems for two startups in 2022 and
                       2023.</li> -->
-                    <li>GMAT: 680</li>
-                  </ul>
-                </div>
+                  <li>GMAT: 680</li>
+                </ul>
               </div>
             </div>
-            <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingTwo">
-                <h3 class="panel-title">
-                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    Bachelor's of Engineering, Computer Science | NIE Institute of Technology
-                  </a>
-                </h3>
-              </div>
-              <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
-                <div class="panel-body">
-                  <ul>
-                    <!-- <li>Selected as part of a competitive program called Entreprenuers On Training where I was mentored
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h3 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                  aria-expanded="true" aria-controls="collapseTwo">
+                  Bachelor's of Engineering, Computer Science | NIE Institute of Technology
+                </a>
+              </h3>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+                <ul>
+                  <!-- <li>Selected as part of a competitive program called Entreprenuers On Training where I was mentored
                       by some of the top entrepreneurs in India from diverse industries.</li> -->
-                    <li>Built a web application for a SaaS startup.</li>
-                  </ul>
-                </div>
+                  <li>Built a web application for a SaaS startup.</li>
+                </ul>
               </div>
             </div>
-            <!-- <div class="panel panel-default">
+          </div>
+          <!-- <div class="panel panel-default">
               <div class="panel-heading" role="tab" id="headingTwo">
                 <h3 class="panel-title">
                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -189,7 +152,7 @@ Nikhil &mdash; Portfolio
                 </div>
               </div>
             </div> -->
-            <!-- <div class="panel panel-default">
+          <!-- <div class="panel panel-default">
               <div class="panel-heading" role="tab" id="headingThree">
                 <h3 class="panel-title">
                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -203,147 +166,146 @@ Nikhil &mdash; Portfolio
                 </div>
               </div>
             </div> -->
-          </div>
-          <!-- END panel-group -->
         </div>
-        <div class="col-md-6 probootstrap-animate" data-animate-effect="fadeInRight">
-          <p><img src="{% static 'img/slider_2.jpg' %}" alt="slider image" class="img-responsive"></p>
+        <!-- END panel-group -->
+      </div>
+      <div class="col-md-6 probootstrap-animate" data-animate-effect="fadeInRight">
+        <p><img src="{% static 'img/slider_2.jpg' %}" alt="slider image" class="img-responsive"></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END section -->
+
+<section class="probootstrap-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center section-heading probootstrap-animate">
+        <h2>Watch Video</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 probootstrap-animate" data-animate-effect="fadeIn">
+        <figure>
+          <div class="probootstrap-video">
+            <a href="https://vimeo.com/45830194" class="popup-vimeo probootstrap-video-play overlay"><span><i
+                  class="icon-play3"></i></span></a>
+            <img src="{% static 'img/slider_3.jpg' %}" alt="Free HTML5 Bootstrap Template by uicookies.com"
+              class="img-responsive">
+          </div>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END section -->
+
+<section class="probootstrap-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center section-heading probootstrap-animate">
+        <h2>Recent Work</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 probootstrap-animate">
+        <div class="probootstrap-card with-hover">
+          <div class="probootstrap-card-media">
+            <a href="single-page.html"><img src="{% static 'img/slider_1.jpg' %}" class="img-responsive img-border"
+                alt="Free HTML5 Template by uicookies.com"></a>
+          </div>
+          <div class="probootstrap-card-text">
+            <h2 class="probootstrap-card-heading mb0">Vokalia and Consonantia</h2>
+            <p class="category">Design</p>
+            <p><a href="single-page.html">View details</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 probootstrap-animate">
+        <div class="probootstrap-card with-hover">
+          <div class="probootstrap-card-media">
+            <a href="single-page.html"><img src="{% static 'img/slider_2.jpg' %}" class="img-responsive img-border"
+                alt="Free HTML5 Template by uicookies.com"></a>
+          </div>
+          <div class="probootstrap-card-text">
+            <h2 class="probootstrap-card-heading mb0">Live the Blind Texts</h2>
+            <p class="category">Model</p>
+            <p><a href="single-page.html">View details</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 probootstrap-animate">
+        <div class="probootstrap-card with-hover">
+          <div class="probootstrap-card-media">
+            <a href="single-page.html"><img src="{% static 'img/slider_3.jpg' %}" class="img-responsive img-border"
+                alt="Free HTML5 Template by uicookies.com"></a>
+          </div>
+          <div class="probootstrap-card-text">
+            <h2 class="probootstrap-card-heading mb0">Behind the Word Mountains</h2>
+            <p class="category">Website</p>
+            <p><a href="single-page.html">View details</a></p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- END section -->
+</section>
+<!-- END section -->
 
-  <section class="probootstrap-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center section-heading probootstrap-animate">
-          <h2>Watch Video</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 probootstrap-animate" data-animate-effect="fadeIn">
-          <figure>
-            <div class="probootstrap-video">
-              <a href="https://vimeo.com/45830194" class="popup-vimeo probootstrap-video-play overlay"><span><i
-                    class="icon-play3"></i></span></a>
-              <img src="{% static 'img/slider_3.jpg' %}" alt="Free HTML5 Bootstrap Template by uicookies.com"
-                class="img-responsive">
-            </div>
-          </figure>
-        </div>
+<section class="probootstrap-section probootstrap-section-lighter">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center section-heading probootstrap-animate">
+        <h2>People Says...</h2>
       </div>
     </div>
-  </section>
-  <!-- END section -->
-
-  <section class="probootstrap-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center section-heading probootstrap-animate">
-          <h2>Recent Work</h2>
+    <div class="row">
+      <div class="col-md-4  probootstrap-animate">
+        <div class="probootstrap-testimony">
+          <blockquote>
+            <p>Had the privilege of working with Nikhil in an assignment at MOneyHop. He comes across as a very
+              focused in his approach & extremely professional. He has always been very approachable & humility a
+              cornerstone of his personality. Wish a great future in his endeavors & I know he will be an asset to any
+              organization he works for.</p>
+          </blockquote>
+          <div class="author">
+            <img src="{% static 'img/person_1.jpg' %}" class="img-responsive"
+              alt="Free HTML5 Bootstrap Theme by uicookies.com">
+            <div>Aviroop <span>Director at LeverageEdu (Ex-MoneyHop)</span></div>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-4 probootstrap-animate">
-          <div class="probootstrap-card with-hover">
-            <div class="probootstrap-card-media">
-              <a href="single-page.html"><img src="{% static 'img/slider_1.jpg' %}" class="img-responsive img-border"
-                  alt="Free HTML5 Template by uicookies.com"></a>
-            </div>
-            <div class="probootstrap-card-text">
-              <h2 class="probootstrap-card-heading mb0">Vokalia and Consonantia</h2>
-              <p class="category">Design</p>
-              <p><a href="single-page.html">View details</a></p>
-            </div>
+      <div class="col-md-4  probootstrap-animate">
+        <div class="probootstrap-testimony">
+          <blockquote>
+            <p>My heartfelt thanks to all of you for your hardwork and dedication to our VC project. And a special
+              shoutout to Nikhil - thank you for covering me when I was busy with exams. Your support was crucial in
+              keeping things moving smoothly and it means a lot to me.</p>
+          </blockquote>
+          <div class="author">
+            <img src="{% static 'img/person_2.jpg' %}" class="img-responsive"
+              alt="Free HTML5 Bootstrap Theme by uicookies.com">
+            <div>J. Hu <span>Student, DeGroote School of Business, McMaster University</span></div>
           </div>
         </div>
-        <div class="col-md-4 probootstrap-animate">
-          <div class="probootstrap-card with-hover">
-            <div class="probootstrap-card-media">
-              <a href="single-page.html"><img src="{% static 'img/slider_2.jpg' %}" class="img-responsive img-border"
-                  alt="Free HTML5 Template by uicookies.com"></a>
-            </div>
-            <div class="probootstrap-card-text">
-              <h2 class="probootstrap-card-heading mb0">Live the Blind Texts</h2>
-              <p class="category">Model</p>
-              <p><a href="single-page.html">View details</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 probootstrap-animate">
-          <div class="probootstrap-card with-hover">
-            <div class="probootstrap-card-media">
-              <a href="single-page.html"><img src="{% static 'img/slider_3.jpg' %}" class="img-responsive img-border"
-                  alt="Free HTML5 Template by uicookies.com"></a>
-            </div>
-            <div class="probootstrap-card-text">
-              <h2 class="probootstrap-card-heading mb0">Behind the Word Mountains</h2>
-              <p class="category">Website</p>
-              <p><a href="single-page.html">View details</a></p>
-            </div>
+      </div>
+      <div class="col-md-4  probootstrap-animate">
+        <div class="probootstrap-testimony">
+          <blockquote>
+            <p>A great experience with an insightful and intelligent member of the team. His innovative ideas were
+              crucial in the product development phase and the would not have moved with the speed it did if it weren't
+              for Nikhil.</p>
+          </blockquote>
+          <div class="author">
+            <img src="{% static 'img/person_3.jpg' %}" class="img-responsive"
+              alt="Free HTML5 Bootstrap Theme by uicookies.com">
+            <div>Rahi Tajzadeh <span>Founder at KnowQuest</span></div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <!-- END section -->
+  </div>
+</section>
 
-  <section class="probootstrap-section probootstrap-section-lighter">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center section-heading probootstrap-animate">
-          <h2>People Says...</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4  probootstrap-animate">
-          <div class="probootstrap-testimony">
-            <blockquote>
-              <p>Had the privilege of working with Nikhil in an assignment at MOneyHop. He comes across as a very
-                focused in his approach & extremely professional. He has always been very approachable & humility a
-                cornerstone of his personality. Wish a great future in his endeavors & I know he will be an asset to any
-                organization he works for.</p>
-            </blockquote>
-            <div class="author">
-              <img src="{% static 'img/person_1.jpg' %}" class="img-responsive"
-                alt="Free HTML5 Bootstrap Theme by uicookies.com">
-              <div>Aviroop <span>Director at LeverageEdu (Ex-MoneyHop)</span></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4  probootstrap-animate">
-          <div class="probootstrap-testimony">
-            <blockquote>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-                blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
-                ocean.</p>
-            </blockquote>
-            <div class="author">
-              <img src="{% static 'img/person_2.jpg' %}" class="img-responsive"
-                alt="Free HTML5 Bootstrap Theme by uicookies.com">
-              <div>John Doe <span>Designer at uicookies.com</span></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4  probootstrap-animate">
-          <div class="probootstrap-testimony">
-            <blockquote>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-                blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
-                ocean.</p>
-            </blockquote>
-            <div class="author">
-              <img src="{% static 'img/person_3.jpg' %}" class="img-responsive"
-                alt="Free HTML5 Bootstrap Theme by uicookies.com">
-              <div>John Doe <span>Designer at uicookies.com</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- END section -->
-  {% endblock %}
-
+<!-- END section -->
+{% endblock %}
