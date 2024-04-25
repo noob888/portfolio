@@ -217,6 +217,44 @@ Nikhil &mdash; Portfolio
         <p><img src="{% static 'img/moneyhop-project.jpg' %}" alt="slider image" class="img-responsive"></p>
       </div>
     </div>
+    <div class="row">
+      <div class="col-md-6 probootstrap-animate" data-animate-effect="fadeInLeft">
+        <div class="panel-group probootstrap-panel" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingFour">
+              <h3 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour"
+                  aria-expanded="true" aria-controls="collapseFour">
+                  Face liveness detection using AI for a ed-tech firm
+                </a>
+              </h3>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
+              <div class="panel-body">
+                <h4>Objective:</h4>
+                <ul>
+                  <li>Detect if students from the online classes are real and paying attention detecting eye blink frequency.</li>
+                </ul>
+                <h4>Strategy:</h4>
+                <ul>
+                  <li>Used DeepFace, a deep learning-based facial recognition model, for robust face detection and landmark localization.</li>
+                  <li>Implemented an algorithm to analyze blinking patterns by tracking changes in eye landmarks over consecutive frames.</li>
+                  <li>Computed a liveness score based on the frequency and consistency of blinking within a defined time window.</li>
+                </ul>
+                <h4>Outcome:</h4>
+                <ul>
+                  <li>Provided an additional layer of security by verifying the authenticity of faces, mitigating spoofing attempts using static images, generative AI or videos.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 probootstrap-animate" data-animate-effect="fadeInRight">
+        <p><img src="{% static 'img/face-is-real.jpg' %}" alt="slider image" class="img-responsive"></p>
+      </div>
+    </div>
   </div>
 </div>
 <!-- END section -->
