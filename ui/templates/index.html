@@ -105,6 +105,49 @@ Nikhil &mdash; Portfolio
       <div class="col-md-6 probootstrap-animate" data-animate-effect="fadeInLeft">
         <div class="panel-group probootstrap-panel" id="accordion" role="tablist" aria-multiselectable="true">
           <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingFour">
+              <h3 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour"
+                  aria-expanded="true" aria-controls="collapseFour">
+                  Face liveness detection using AI for a ed-tech firm
+                </a>
+              </h3>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
+              <div class="panel-body">
+                <h4>Objective:</h4>
+                <ul>
+                  <li>Detect if students from the online classes are real and paying attention detecting eye blink
+                    frequency.</li>
+                </ul>
+                <h4>Strategy:</h4>
+                <ul>
+                  <li>Used DeepFace, a deep learning-based facial recognition model, for robust face detection and
+                    landmark localization.</li>
+                  <li>Implemented an algorithm to analyze blinking patterns by tracking changes in eye landmarks over
+                    consecutive frames.</li>
+                  <li>Computed a liveness score based on the frequency and consistency of blinking within a defined time
+                    window.</li>
+                </ul>
+                <h4>Outcome:</h4>
+                <ul>
+                  <li>Provided an additional layer of security by verifying the authenticity of faces, mitigating
+                    spoofing attempts using static images, generative AI or videos.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 probootstrap-animate" data-animate-effect="fadeInRight">
+        <p><img src="{% static 'img/face-is-real.jpg' %}" alt="slider image" class="img-responsive"></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 probootstrap-animate" data-animate-effect="fadeInLeft">
+        <div class="panel-group probootstrap-panel" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingOne">
               <h3 class="panel-title">
                 <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
@@ -161,13 +204,17 @@ Nikhil &mdash; Portfolio
                 </ul>
                 <h4>Strategy:</h4>
                 <ul>
-                  <li>Conducted a comprehensive performance audit of the application using Google Page Speed Insights and Lighthouse to identify areas for improvement.</li>
-                  <li>Implemented techniques such as code minification, image optimization, and browser caching to reduce page load times.</li>
-                  <li>Implemented lazy loading for non-critical assets and asynchronous loading of scripts to further improve page load times and interactivity.</li>
+                  <li>Conducted a comprehensive performance audit of the application using Google Page Speed Insights
+                    and Lighthouse to identify areas for improvement.</li>
+                  <li>Implemented techniques such as code minification, image optimization, and browser caching to
+                    reduce page load times.</li>
+                  <li>Implemented lazy loading for non-critical assets and asynchronous loading of scripts to further
+                    improve page load times and interactivity.</li>
                 </ul>
                 <h4>Outcome:</h4>
                 <ul>
-                  <li>Following the implementation of performance optimizations, all performance scores increased significantly, with an average score reaching 96 from 63.
+                  <li>Following the implementation of performance optimizations, all performance scores increased
+                    significantly, with an average score reaching 96 from 63.
                   </li>
                 </ul>
               </div>
@@ -195,17 +242,22 @@ Nikhil &mdash; Portfolio
               <div class="panel-body">
                 <h4>Objective:</h4>
                 <ul>
-                  <li>Reach goal of $5M monthly revenue within a year from scratch through digital advertisements to raise seed fund.</li>
+                  <li>Reach goal of $5M monthly revenue within a year from scratch through digital advertisements to
+                    raise seed fund.</li>
                 </ul>
                 <h4>Strategy:</h4>
                 <ul>
-                  <li>Built a budget model using Excel Solver to figure out the budget required i.e. $150k per year to reach the goal.</li>
-                  <li>Utilized programmatic advertising platforms and automation to target relevant audiences and optimize ad placements and reached 30k web sessions.</li>
-                  <li>Implement customer acquisition cost (CAC) optimization techniques using AI algorithms like gradient descent to maximize efficiency and reduced CAC by ~70%.</li>
+                  <li>Built a budget model using Excel Solver to figure out the budget required i.e. $150k per year to
+                    reach the goal.</li>
+                  <li>Utilized programmatic advertising platforms and automation to target relevant audiences and
+                    optimize ad placements and reached 30k web sessions.</li>
+                  <li>Implement customer acquisition cost (CAC) optimization techniques using AI algorithms like
+                    gradient descent to maximize efficiency and reduced CAC by ~70%.</li>
                 </ul>
                 <h4>Outcome:</h4>
                 <ul>
-                  <li>The revenue goal was reached within 8 months and MoneyHop successfully raised it's seed round of $1.25M.
+                  <li>The revenue goal was reached within 8 months and MoneyHop successfully raised it's seed round of
+                    $1.25M.
                   </li>
                 </ul>
               </div>
@@ -215,44 +267,6 @@ Nikhil &mdash; Portfolio
       </div>
       <div class="col-md-6 probootstrap-animate" data-animate-effect="fadeInRight">
         <p><img src="{% static 'img/moneyhop-project.jpg' %}" alt="slider image" class="img-responsive"></p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6 probootstrap-animate" data-animate-effect="fadeInLeft">
-        <div class="panel-group probootstrap-panel" id="accordion" role="tablist" aria-multiselectable="true">
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingFour">
-              <h3 class="panel-title">
-                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour"
-                  aria-expanded="true" aria-controls="collapseFour">
-                  Face liveness detection using AI for a ed-tech firm
-                </a>
-              </h3>
-            </div>
-            <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
-              <div class="panel-body">
-                <h4>Objective:</h4>
-                <ul>
-                  <li>Detect if students from the online classes are real and paying attention detecting eye blink frequency.</li>
-                </ul>
-                <h4>Strategy:</h4>
-                <ul>
-                  <li>Used DeepFace, a deep learning-based facial recognition model, for robust face detection and landmark localization.</li>
-                  <li>Implemented an algorithm to analyze blinking patterns by tracking changes in eye landmarks over consecutive frames.</li>
-                  <li>Computed a liveness score based on the frequency and consistency of blinking within a defined time window.</li>
-                </ul>
-                <h4>Outcome:</h4>
-                <ul>
-                  <li>Provided an additional layer of security by verifying the authenticity of faces, mitigating spoofing attempts using static images, generative AI or videos.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 probootstrap-animate" data-animate-effect="fadeInRight">
-        <p><img src="{% static 'img/face-is-real.jpg' %}" alt="slider image" class="img-responsive"></p>
       </div>
     </div>
   </div>
@@ -300,39 +314,45 @@ Nikhil &mdash; Portfolio
       <div class="col-md-4 probootstrap-animate">
         <div class="probootstrap-card with-hover">
           <div class="probootstrap-card-media">
-            <a href="https://www.credly.com/badges/29a466a0-854f-4cc5-8d92-f237540aef8d/linked_in_profile"><img src="{% static 'img/SaFe6.jpg' %}" class="img-responsive img-border"
-                alt="Certification Image"></a>
+            <a href="https://www.credly.com/badges/29a466a0-854f-4cc5-8d92-f237540aef8d/linked_in_profile"><img
+                src="{% static 'img/SaFe6.jpg' %}" class="img-responsive img-border" alt="Certification Image"></a>
           </div>
           <div class="probootstrap-card-text">
             <h2 class="probootstrap-card-heading mb0">SAFe 6.0</h2>
             <p class="category">Product Management</p>
-            <p><a href="https://www.credly.com/badges/29a466a0-854f-4cc5-8d92-f237540aef8d/linked_in_profile" target="_blank">View details</a></p>
+            <p><a href="https://www.credly.com/badges/29a466a0-854f-4cc5-8d92-f237540aef8d/linked_in_profile"
+                target="_blank">View details</a></p>
           </div>
         </div>
       </div>
       <div class="col-md-4 probootstrap-animate">
         <div class="probootstrap-card with-hover">
           <div class="probootstrap-card-media">
-            <a href="https://learn.microsoft.com/en-gb/users/nikhiladiga-9556/credentials/a9b212a4508fa617?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank"><img src="{% static 'img/Microsoft-Powerbi.jpg' %}"
-                class="img-responsive img-border" alt="Certification Image"></a>
+            <a href="https://learn.microsoft.com/en-gb/users/nikhiladiga-9556/credentials/a9b212a4508fa617?ref=https%3A%2F%2Fwww.linkedin.com%2F"
+              target="_blank"><img src="{% static 'img/Microsoft-Powerbi.jpg' %}" class="img-responsive img-border"
+                alt="Certification Image"></a>
           </div>
           <div class="probootstrap-card-text">
             <h2 class="probootstrap-card-heading mb0">Power BI Data Analyst</h2>
             <p class="category">Analytics</p>
-            <p><a href="https://learn.microsoft.com/en-gb/users/nikhiladiga-9556/credentials/a9b212a4508fa617?ref=https%3A%2F%2Fwww.linkedin.com%2F">View details</a></p>
+            <p><a
+                href="https://learn.microsoft.com/en-gb/users/nikhiladiga-9556/credentials/a9b212a4508fa617?ref=https%3A%2F%2Fwww.linkedin.com%2F">View
+                details</a></p>
           </div>
         </div>
       </div>
       <div class="col-md-4 probootstrap-animate">
         <div class="probootstrap-card with-hover">
           <div class="probootstrap-card-media">
-            <a href="https://google.accredible.com/394547a2-51a6-4212-8593-0bd5488f7e48"><img src="{% static 'img/Google-cloud-engineer.jpg' %}"
-                class="img-responsive img-border" alt="Certification Image"></a>
+            <a href="https://google.accredible.com/394547a2-51a6-4212-8593-0bd5488f7e48"><img
+                src="{% static 'img/Google-cloud-engineer.jpg' %}" class="img-responsive img-border"
+                alt="Certification Image"></a>
           </div>
           <div class="probootstrap-card-text">
             <h2 class="probootstrap-card-heading mb0">Google Cloud Associate Engineer</h2>
             <p class="category">Cloud</p>
-            <p><a href="https://google.accredible.com/394547a2-51a6-4212-8593-0bd5488f7e48" target="_blank">View details</a></p>
+            <p><a href="https://google.accredible.com/394547a2-51a6-4212-8593-0bd5488f7e48" target="_blank">View
+                details</a></p>
           </div>
         </div>
       </div>
@@ -341,26 +361,30 @@ Nikhil &mdash; Portfolio
       <div class="col-md-4 probootstrap-animate">
         <div class="probootstrap-card with-hover">
           <div class="probootstrap-card-media">
-            <a href="https://www.credential.net/e81633ad-24bd-4bff-bd92-23c56691a9f8" target="_blank"><img src="{% static 'img/Google-cloud-leader.jpg' %}"
-                class="img-responsive img-border" alt="Certification Image"></a>
+            <a href="https://www.credential.net/e81633ad-24bd-4bff-bd92-23c56691a9f8" target="_blank"><img
+                src="{% static 'img/Google-cloud-leader.jpg' %}" class="img-responsive img-border"
+                alt="Certification Image"></a>
           </div>
           <div class="probootstrap-card-text">
             <h2 class="probootstrap-card-heading mb0">Google Digital Cloud Leader</h2>
             <p class="category">Cloud</p>
-            <p><a href="https://www.credential.net/e81633ad-24bd-4bff-bd92-23c56691a9f8" target="_blank">View details</a></p>
+            <p><a href="https://www.credential.net/e81633ad-24bd-4bff-bd92-23c56691a9f8" target="_blank">View
+                details</a></p>
           </div>
         </div>
       </div>
       <div class="col-md-4 probootstrap-animate">
         <div class="probootstrap-card with-hover">
           <div class="probootstrap-card-media">
-            <a href="https://courses.360digitmg.skillsnetwork.site/certificates/49253919bc3c4a0c93bb96533aac5b0d" target="_blank"><img src="{% static 'img/IBM-ML.jpg' %}" class="img-responsive img-border"
+            <a href="https://courses.360digitmg.skillsnetwork.site/certificates/49253919bc3c4a0c93bb96533aac5b0d"
+              target="_blank"><img src="{% static 'img/IBM-ML.jpg' %}" class="img-responsive img-border"
                 alt="Certification Image"></a>
           </div>
           <div class="probootstrap-card-text">
             <h2 class="probootstrap-card-heading mb0">IBM Machine Learning with Python</h2>
             <p class="category">Data Science</p>
-            <p><a href="https://courses.360digitmg.skillsnetwork.site/certificates/49253919bc3c4a0c93bb96533aac5b0d" target="_blank">View details</a></p>
+            <p><a href="https://courses.360digitmg.skillsnetwork.site/certificates/49253919bc3c4a0c93bb96533aac5b0d"
+                target="_blank">View details</a></p>
           </div>
         </div>
       </div>
@@ -383,8 +407,9 @@ Nikhil &mdash; Portfolio
       <div class="col-md-4 probootstrap-animate">
         <div class="probootstrap-card with-hover">
           <div class="probootstrap-card-media">
-            <a href="single-page.html" style="color: gray; pointer-events: none;"><img src="{% static 'img/python-flask-certificate.jpg' %}"
-                class="img-responsive img-border" alt="Certification Image"></a>
+            <a href="single-page.html" style="color: gray; pointer-events: none;"><img
+                src="{% static 'img/python-flask-certificate.jpg' %}" class="img-responsive img-border"
+                alt="Certification Image"></a>
           </div>
           <div class="probootstrap-card-text">
             <h2 class="probootstrap-card-heading mb0">Complete Python Web Course</h2>
@@ -396,8 +421,9 @@ Nikhil &mdash; Portfolio
       <div class="col-md-4 probootstrap-animate">
         <div class="probootstrap-card with-hover">
           <div class="probootstrap-card-media">
-            <a href="single-page.html" style="color: gray; pointer-events: none;"><img src="{% static 'img/Sql-certificate.jpg' %}"
-                class="img-responsive img-border" alt="Certification Image"></a>
+            <a href="single-page.html" style="color: gray; pointer-events: none;"><img
+                src="{% static 'img/Sql-certificate.jpg' %}" class="img-responsive img-border"
+                alt="Certification Image"></a>
           </div>
           <div class="probootstrap-card-text">
             <h2 class="probootstrap-card-heading mb0">Ultimate SQL Bootcamp</h2>
@@ -409,13 +435,15 @@ Nikhil &mdash; Portfolio
       <div class="col-md-4 probootstrap-animate">
         <div class="probootstrap-card with-hover">
           <div class="probootstrap-card-media">
-            <a href="https://credentials.marqueegroup.ca/64cf4cec-f62e-4c3c-954f-a285cba37c77#gs.7u2cyb" target="_blank"><img src="{% static 'img/marquee-financial-model.jpg' %}"
+            <a href="https://credentials.marqueegroup.ca/64cf4cec-f62e-4c3c-954f-a285cba37c77#gs.7u2cyb"
+              target="_blank"><img src="{% static 'img/marquee-financial-model.jpg' %}"
                 class="img-responsive img-border" alt="Certification Image"></a>
           </div>
           <div class="probootstrap-card-text">
             <h2 class="probootstrap-card-heading mb0">Marquee Build a Financial Model</h2>
             <p class="category">Finance</p>
-            <p><a href="https://credentials.marqueegroup.ca/64cf4cec-f62e-4c3c-954f-a285cba37c77#gs.7u2cyb" target="_blank">View details</a></p>
+            <p><a href="https://credentials.marqueegroup.ca/64cf4cec-f62e-4c3c-954f-a285cba37c77#gs.7u2cyb"
+                target="_blank">View details</a></p>
           </div>
         </div>
       </div>
@@ -445,8 +473,8 @@ Nikhil &mdash; Portfolio
               organization he works for.</p>
           </blockquote>
           <div class="author">
-            <a href="https://in.linkedin.com/in/aviroop-sengupta-34a4102" target="_blank"><img src="{% static 'img/LinkedIn_circle.png' %}" class="img-responsive"
-                alt="Testimonial Image"></a>
+            <a href="https://in.linkedin.com/in/aviroop-sengupta-34a4102" target="_blank"><img
+                src="{% static 'img/LinkedIn_circle.png' %}" class="img-responsive" alt="Testimonial Image"></a>
             <div>Aviroop <span>Director at LeverageEdu (Ex-MoneyHop)</span></div>
           </div>
         </div>
@@ -473,8 +501,8 @@ Nikhil &mdash; Portfolio
               for Nikhil.</p>
           </blockquote>
           <div class="author">
-            <a href="https://ca.linkedin.com/in/tajzadeh" target="_blank"><img src="{% static 'img/LinkedIn_circle.png' %}" class="img-responsive"
-                alt="Testimonial Image"> </a>
+            <a href="https://ca.linkedin.com/in/tajzadeh" target="_blank"><img
+                src="{% static 'img/LinkedIn_circle.png' %}" class="img-responsive" alt="Testimonial Image"> </a>
             <div>Rahi Tajzadeh <span>Founder at KnowQuest</span></div>
           </div>
         </div>
