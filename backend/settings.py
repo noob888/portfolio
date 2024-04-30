@@ -89,18 +89,20 @@ DATABASES = {
     #     'NAME': BASE_DIR / 'db.sqlite3',
     # }
     # Production db
-    'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
     # Development db
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.postgresql',
-    #     'NAME': 'portfolio_db',
-    #     'USER': 'postgres',
-    #     'PASSWORD': 'N!kh!l',
-    #     'HOST': 'localhost', # or your database host
-    #     'PORT': '5432', # or your database port
-    # }
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'portfolio_db',
+        'USER': 'postgres',
+        'PASSWORD': 'N!kh!l',
+        'HOST': 'localhost', # or your database host
+        'PORT': '5432', # or your database port
+    }
 }
 
+# Override with production database URL if available
+if 'DATABASE_URL' in os.environ:
+    DATABASES['default'] = dj_database_url.config(default=os.getenv('DATABASE_URL'))
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
