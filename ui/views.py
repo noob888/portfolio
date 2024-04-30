@@ -18,20 +18,37 @@ def home_view(request):
 
     return render(request, template, context)
 
-class about_view(TemplateView):
-    template_name = 'about.html'
+def about_view(request):
+    template = 'about.html'
+
+    if request.method == 'POST':
+        form = HomePageForm(request.POST)
+        if form.is_valid():
+           form.save()
+    else:
+        form = HomePageForm()
+
+    context ={'form': form}
+
+    return render(request, template, context)
 
 def contact_view(request):
     template = 'contact.html'
 
     if request.method == 'POST':
-        form = ContactPageForm(request.POST)
+        contact_form = ContactPageForm(request.POST)
+        if contact_form.is_valid():
+            contact_form.save()
+        form = HomePageForm(request.POST)
         if form.is_valid():
-            form.save()
+           form.save()
     else:
-        form = ContactPageForm()
+        contact_form = ContactPageForm()
+        form = HomePageForm()
 
-    context ={'form': form}
+    context ={
+        'contact_form': contact_form,
+        'form': form}
 
     return render(request, template, context)
 

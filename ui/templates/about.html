@@ -73,6 +73,40 @@ About
     </div>
   </div>
 </section>
+<!-- ######################## -->
+<!-- COMPANY LOGOS  -->
+<!-- ######################## -->
+
+<section class="probootstrap-slider flexslider">
+  <div class="row">
+    <div class="col-md-12 text-center section-heading probootstrap-animate">
+      <h2>Photgraphy Skills</h2>
+    </div>
+  </div>
+  <ul class="slides">
+    <li>
+      <img src="{% static 'img/about-slide1.jpg' %}" alt="About Slide 1" max-height="100px" max-width="100px">
+    </li>
+    <li>
+      <img src="{% static 'img/about-slide2.jpg' %}" alt="About Slide 2" height="100px" width="100px">
+    </li>
+    <li>
+      <img src="{% static 'img/about-slide3.jpg' %}" alt="About Slide 2" height="100px" width="100px">
+    </li>
+    <li>
+      <img src="{% static 'img/about-slide4.jpg' %}" alt="About Slide 2" height="100px" width="100px">
+    </li>
+    <li>
+      <img src="{% static 'img/about-slide5.jpg' %}" alt="About Slide 2" height="100px" width="100px">
+    </li>
+    <!-- <li>
+      <img src="{% static 'img/about-slide6.jpg' %}" alt="About Slide 2" height="100px" width="100px">
+    </li>
+    <li>
+      <img src="{% static 'img/about-slide7.jpg' %}" alt="About Slide 2" height="100px" width="100px">
+    </li> -->
+  </ul>
+</section>
 
 <section class="probootstrap-section">
   <div class="container">
@@ -268,4 +302,20 @@ About
 
 <!-- END section -->
 
+{% endblock %}
+
+{% block script %}
+<script>
+  // Automatically advance the slider
+  $('.flexslider').flexslider({
+    animation: "slide",
+    animationLoop: true,
+    slideshow: true, // Adjust as needed
+    // directionNav: false,
+    // controlNav: false,
+    itemWidth: 100, // Adjust width of each slide
+    minItems: 3, // Display 3 logos at a time
+    maxItems: 3, // Display 3 logos at a time
+  });
+</script>
 {% endblock %}

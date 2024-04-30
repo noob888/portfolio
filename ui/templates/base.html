@@ -51,7 +51,8 @@
                 <li><a href="https://linkedin.com/in/nikhil-adiga" target="_blank"><i class="icon-linkedin"></i></a>
                 </li>
                 <li><a href="https://github.com/noob888" target="_blank"><i class="icon-github"></i></a></li>
-                <li><a href="https://www.kaggle.com/nikhiladiga" target="_blank"><img style="margin-bottom: 10px;" src="{% static 'img/Kaggle_logo.webp' %}"></a></li>
+                <li><a href="https://www.kaggle.com/nikhiladiga" target="_blank"><img style="margin-bottom: 10px;"
+                            src="{% static 'img/Kaggle_logo.webp' %}"></a></li>
                 <!-- <li><a href="#"><i class="icon-instagram2"></i></a></li> -->
             </ul>
             <div class="extra-text visible-xs">
@@ -114,18 +115,14 @@
                         <h4 class="heading">Let's talk.</h4>
                         <p>Drop your email to get in touch.</p>
                         <form method="post">
-                            <!-- <div class="form-field">
-                                {% csrf_token %}
-                                {{ form|crispy }}
-                                <button class="btn btn-subscribe">Submit</button>
-                            </div> -->
-                            <div class="form-field row"> 
-                                <div class="col-md-9"> 
+                            <div class="form-field row">
+                                <div class="col-md-9">
                                     {% csrf_token %}
                                     {{ form|crispy }}
                                 </div>
                                 <div class="col-md-3">
-                                    <button type="submit" class="btn btn-subscribe" style="margin-top: 34px;">Submit</button>
+                                    <button type="submit" class="btn btn-subscribe"
+                                        style="margin-top: 34px;">Submit</button>
                                 </div>
                             </div>
                         </form>
@@ -145,7 +142,8 @@
                                         class="icon-linkedin"></i></a></li>
                             <!-- <li><a href="#"><i class="icon-kaggle"></i></a></li> -->
                             <li><a href="https://github.com/noob888" target="_blank"><i class="icon-github"></i></a>
-                                <li><a href="https://www.kaggle.com/nikhiladiga" target="_blank"><img style="margin-bottom: 10px;" src="{% static 'img/Kaggle_logo.webp' %}"></a></li>
+                            <li><a href="https://www.kaggle.com/nikhiladiga" target="_blank"><img
+                                        style="margin-bottom: 10px;" src="{% static 'img/Kaggle_logo.webp' %}"></a></li>
                             </li>
                         </ul>
                     </div>
@@ -157,6 +155,11 @@
     <div class="gototop js-top">
         <a href="#" class="js-gotop"><i class="icon-chevron-thin-up"></i></a>
     </div>
+    {% block style %}
+    {% endblock %}
+
+    {% block script %}
+    {% endblock%}
 
 
     <script src="{% static 'js/scripts.min.js' %}"></script>

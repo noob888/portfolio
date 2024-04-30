@@ -31,7 +31,7 @@ Contact
       <div class="col-md-8 probootstrap-animate overlap">
         <form method="post" class="probootstrap-form probootstrap-form-box mb60">
           {% csrf_token %}
-          {{ form|crispy }}
+          {{ contact_form|crispy }}
           <button type="submit" class="btn btn-primary">Submit</button>
           <!-- <div class="row">
               <div class="col-md-6">
