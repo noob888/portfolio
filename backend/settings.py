@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-%90htut6o5^k(e#pf_vk!k8g)stki%cbpszp_d6u&zht!qe-fn'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     'nikhil-portfolio-aee94ffcd953.herokuapp.com', 
@@ -52,7 +52,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    # 'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -152,7 +152,7 @@ STATIC_URL = 'static/'
 
 # STATIC_ROOT = os.path.join(BASE_DIR, "static")
 #for whitenoise testing
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "ui", "static"),]
 
 MEDIA_URL = '/media/'
@@ -163,7 +163,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 # https://nikhil-portfolio-aee94ffcd953.herokuapp.com/ - Heroku URL
