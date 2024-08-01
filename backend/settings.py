@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 import os
 from pathlib import Path
 # Only for production
-import dj_database_url
+# import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-%90htut6o5^k(e#pf_vk!k8g)stki%cbpszp_d6u&zht!qe-fn'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'nikhil-portfolio-aee94ffcd953.herokuapp.com', 
@@ -85,26 +85,26 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    # c:\Users\richa\OneDrive\Documents\Code\venv\Scripts\python.exe
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': BASE_DIR / 'db.sqlite3',
-    # }
-    # Production db
     # Development db
+    # c:\Users\richa\OneDrive\Documents\Code\venv\Scripts\python.exe
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'portfolio_db',
-        'USER': 'postgres',
-        'PASSWORD': 'N!kh!l',
-        'HOST': 'localhost', # or your database host
-        'PORT': '5432', # or your database port
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
+    # Production dd
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     'NAME': 'portfolio_db',
+    #     'USER': 'postgres',
+    #     'PASSWORD': 'N!kh!l',
+    #     'HOST': 'localhost', # or your database host
+    #     'PORT': '5432', # or your database port
+    # }
 }
 
 # Override with production database URL if available
-if 'DATABASE_URL' in os.environ:
-    DATABASES['default'] = dj_database_url.config(default=os.getenv('DATABASE_URL'))
+# if 'DATABASE_URL' in os.environ:
+#     DATABASES['default'] = dj_database_url.config(default=os.getenv('DATABASE_URL'))
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
